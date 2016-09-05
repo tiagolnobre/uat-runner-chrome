@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'rack'
+gem 'rspec'
+gem 'capybara'
+gem 'capybara-screenshot'
+gem 'selenium-webdriver'
+gem 'sequel_pg'
+gem 'redis'
+gem 'database_cleaner'
+gem 'bcrypt'
