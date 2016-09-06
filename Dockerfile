@@ -1,4 +1,4 @@
-FROM saksmlz/docker-capybara-webkit-chromedriver:2.2
+FROM tiagonobre/docker-capybara-webkit-chromedriver:latest
 
 RUN mkdir -p /specs
 WORKDIR /specs

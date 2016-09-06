@@ -1,0 +1,16 @@
+my:
+  build: ../
+  dockerfile: Dockerfile
+  container_name: docker_chromedriver_test
+  volumes:
+    - /dev/shm:/dev/shm
+
+sut:
+  build: .
+  dockerfile: Dockerfile
+  # image: tiagonobre/uat-runner-chrome
+  links:
+    - docker_chromedriver_test
+  volumes:
+    - /dev/shm:/dev/shm
+    - ./spec:/specs/spec
