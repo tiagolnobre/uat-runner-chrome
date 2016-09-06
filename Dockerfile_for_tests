@@ -1,4 +1,4 @@
-FROM dockercapybarawebkitchromedriver_browser
+FROM dockercapybarawebkitchromedriver_chromedriver
 
 RUN mkdir -p /specs
 WORKDIR /specs
